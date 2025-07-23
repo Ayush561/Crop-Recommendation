@@ -56,19 +56,6 @@ caret, class, rpart, nnet, e1071 (ML Packages)
 
 dplyr, readr, scales (Data Handling & Display)
 
-🚀 How to Run the App
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/Ayush561/Crop-Recommendation-RShiny.git
-Open RStudio and run app.R.
-
-Upload your dataset (or use the pre-loaded one).
-
-Input the environmental parameters and click Predict Crop.
-
 📁 Dataset
 The dataset used includes agricultural features like:
 
