@@ -1,69 +1,61 @@
-# Crop-Recommendation
-This project is an interactive Crop Recommendation System built using R Shiny, designed to help farmers and agricultural professionals determine the most suitable crop to cultivate based on soil and environmental conditions such as Nitrogen, Phosphorus, Potassium, Temperature, Humidity, pH, and Rainfall.
+🌾 Dynamic Crop Recommendation System (R Shiny + Random Forest)
+This project is an advanced Crop Recommendation Web Application built with R Shiny and powered by a Random Forest Machine Learning model. It helps farmers and agriculture professionals determine the most suitable crop to grow based on environmental and soil parameters, offering not only predictions but also model confidence and top-5 crop probabilities.
 
-🔍 Overview
-The application allows users to input soil and climate parameters and receive crop recommendations based on three machine learning models:
+🔍 Project Overview
+With climate and soil conditions playing a vital role in agriculture, this dynamic system allows users to input real-time values for soil nutrients and environmental factors, and receive a high-confidence crop recommendation. The model also visualizes the top 5 most likely crops with their corresponding probabilities, helping in informed decision-making.
 
-✅ K-Nearest Neighbors (KNN)
+🧠 Core Features
+✅ Random Forest-based Prediction Engine
 
-✅ Logistic Regression
+✅ User-Friendly R Shiny Interface
 
-✅ Decision Tree
+✅ Confidence Score for Prediction
 
-Each model predicts the most suitable crop and displays its prediction accuracy.
+✅ Top 5 Crop Probabilities Visualization
 
-🧠 Machine Learning Models Used
-K-Nearest Neighbors (KNN):
-Uses distance-based similarity to recommend the crop most frequently occurring among its k-nearest neighbors.
+✅ Fully Responsive Design with Modern UI
 
-Logistic Regression (Multinomial):
-Applies multiclass classification to predict the crop using linear decision boundaries.
+🔧 Inputs Required
+Users are prompted to enter:
 
-Decision Tree Classifier:
-Uses tree-based decision rules to classify input data into different crop categories.
+🌿 Nitrogen (N)
 
-📊 Features
-User-friendly web interface built with R Shiny
+🌿 Phosphorous (P)
 
-Input fields for:
+🌿 Potassium (K)
 
-Nitrogen (N)
+🌡️ Temperature (°C)
 
-Phosphorus (P)
+💧 Humidity (%)
 
-Potassium (K)
+⚗️ pH Level
 
-Temperature (°C)
+🌧️ Rainfall (mm)
 
-Humidity (%)
+These inputs are then passed to the trained model for prediction.
 
-pH Value
+📊 Output
+Predicted Crop with confidence percentage
 
-Rainfall (mm)
+Bar Chart showing the Top 5 crops by probability
 
-Displays model-specific crop recommendations
+Clean and modern visual design with dynamic styling
 
-Shows accuracy of each model
+🛠️ Technologies Used
+Language: R
 
-Real-time predictions upon input submission
+Framework: Shiny
 
-⚙️ Technologies Used
-R Programming
+ML Library: randomForest
 
-Shiny (Web App Framework)
+Visualization: ggplot2
 
-caret, class, rpart, nnet, e1071 (ML Packages)
+UI Styling: shinythemes, HTML/CSS styling via tags$style
 
-dplyr, readr, scales (Data Handling & Display)
+📁 Model Details
+The model crop_rf_model.rds is a trained Random Forest classifier.
 
-📁 Dataset
-The dataset used includes agricultural features like:
+Trained on a dataset with multiple crop types and soil-climate features.
 
-N, P, K contents in soil
-
-Temperature, Humidity, pH, and Rainfall
-
-Crop label (target variable)
-
-Preprocessing includes normalization and label encoding for ML model compatibility.
+Output includes class probabilities for every crop type.
 
